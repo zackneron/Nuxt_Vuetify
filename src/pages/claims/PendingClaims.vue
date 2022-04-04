@@ -68,9 +68,9 @@ export default {
   components: { Breadcrumb, TableContentHeader },
   data() {
     return {
-      company: "Simba Chips Company (Pty) Ltd (26872634)",
-      pensionFund: "Sanlam Umbrella Pension Fund",
-      providentFund: "Sanlam Umbrella Provident Fund",
+      company: "Arc En Ciel Company (Pty) Ltd",
+      pensionFund: "Katshi Design Pension Fund",
+      providentFund: "Katshi Design Provident Fund",
       breadItems: [
         {
           text: "Home",

@@ -147,7 +147,7 @@
                     type="submit"
                     @click="submitClaim = true"
                   >
-                    Submit claim to Sanlam
+                    Submit claim to Katshi
                   </v-btn>
                   <v-btn
                     large
@@ -195,16 +195,7 @@
             </v-btn>
           </v-card-title>
           <v-card-text class="px-0">
-            This member has conversion option which allows the member to take
-            out a similar individual insurance policy at their own cost when
-            terminating employment. Note that this option may have a different
-            end age than the benefit. The maximum amount of group insurance
-            cover that can be converted to a similar individual insurance policy
-            with Sanlam is equal to the actual cover that member enjoyed
-            immediately before their membership to the group insurance policy
-            was terminated. The converted group insurance will be subject to the
-            conditions that apply to new individual life policies issued by
-            Sanlam at the date of conversion.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos voluptatibus exercitationem, dolorem, dolor vel modi rerum error doloremque ad ea eveniet, facilis excepturi at!
           </v-card-text>
           <v-card-text class="pa-0">
             <div class="d-flex justify-end">
@@ -337,7 +328,7 @@
           <v-card-subtitle
             class="text-body-1 pa-0 mb-4 black--text font-weight-light"
           >
-            Simba Chips Company (Pty) Ltd - Sanlam Umbrella Pension and
+            Lumiere Company (Pty) Ltd - Zaria Pension and
             Provident Fund
           </v-card-subtitle>
           <MemberProfile />
@@ -385,8 +376,8 @@ export default {
       ],
       e6: 1,
       header: "Zack Neron",
-      boldText: "Simba Chips Company (Pty) Ltd",
-      plainText: "Sanlam Umbrella Pension Fund",
+      boldText: "Lumiere Company (Pty) Ltd",
+      plainText: "Zaria Pension Fund",
       saveClaim: false,
       rejectClaim: false,
       submitApprovalClaim: false,

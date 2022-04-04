@@ -13,7 +13,7 @@
                     Payment option elected
                   </v-card-title>
                   <h2 class="mb-6 black--text">
-                    Sanlam Umbrella Provident Fund
+                    Katshi Design Provident Fund
                   </h2>
                 </v-col>
               </v-row>
@@ -24,8 +24,8 @@
                   </span>
                   <v-radio-group v-model="paymentOptionProvidentFund" column>
                     <v-radio
-                      label="Same payment options as Sanlam Umbrella Pension Fund"
-                      value="Same payment options as Sanlam Umbrella Pension Fund"
+                      label="Same payment options as Katshi Design Pension Fund"
+                      value="Same payment options as Katshi Design Pension Fund"
                       class="mb-2 pa-2 radio-item"
                       @change="showSamePaymentProvidentFund"
                       :class="{ focus: isFocusProvidentFund }"
@@ -37,7 +37,7 @@
                           class="d-flex justify-space-between align-center flex-grow-1"
                         >
                           <span
-                            >Same payment options as Sanlam Umbrella Pension
+                            >Same payment options as Katshi Design Pension
                             Fund
                           </span>
                           <v-btn
@@ -166,13 +166,13 @@
                                 </v-icon>
                               </template>
                               <span class="d-block text-caption"
-                                >Members who elect to the Sanlam Plus
+                                >Members who elect to the Katshi Plus
                                 Preservation Fund, will have their investment
                                 transferred seamlessly</span
                               >
                               <span class="d-block text-caption"
                                 >provided that the member’s Investment
-                                portfolio(s) exist(s) on the Sanlam Plus
+                                portfolio(s) exist(s) on the Katshi Plus
                                 Preservation Fund.</span
                               >
                               <span class="d-block text-caption"
@@ -182,7 +182,7 @@
                               >
                               <span class="d-block text-caption"
                                 >In order to do such a transfer, we would
-                                require the separate Sanlam Plus Preservation
+                                require the separate Katshi Plus Preservation
                                 Fund application form to be completed.</span
                               >
                               <span class="d-block text-caption"
@@ -299,7 +299,7 @@
                       </v-card-title>
                       <v-radio-group column class="mt-0">
                         <div
-                          v-if="viewSanlamPlusProvidentFund"
+                          v-if="viewKatshiPlusProvidentFund"
                           v-show="isFocusInner"
                           :class="{
                             focus: isFocusInner,
@@ -307,9 +307,9 @@
                           class="radio-item d-flex justify-space-between align-center pa-2"
                         >
                           <v-radio
-                            label="Sanlam Plus Preservation Fund"
-                            value="Sanlam Plus Preservation Fund"
-                            @click="showSanlamPlusProvidentFund"
+                            label="Katshi Plus Preservation Fund"
+                            value="Katshi Plus Preservation Fund"
+                            @click="showKatshiPlusProvidentFund"
                           ></v-radio>
                           <v-btn
                             text
@@ -350,7 +350,7 @@
                       </v-radio-group>
 
                       <div
-                        v-show="showSanlamPlusProvidentFundText"
+                        v-show="showKatshiPlusProvidentFundText"
                         class="pa-2"
                       >
                         <div grey class="text-bg-info py-6 px-7 mb-3">
@@ -361,10 +361,10 @@
                             <div>
                               <p class="mb-0">
                                 Members who elect to have their benefit
-                                transferred to the Sanlam Plus Preservation
+                                transferred to the Katshi Plus Preservation
                                 Fund, will have their investments transferred
                                 seamlessly provided that the member's investment
-                                portfolio(s) exist(s) on the Sanlam Plus
+                                portfolio(s) exist(s) on the Katshi Plus
                                 Preservation Fund. In these cases, it means that
                                 the funds will not be disinvested in cash, but
                                 transferred directly to the chosen portfolios.
@@ -414,7 +414,7 @@
                                   <p class="mb-0">
                                     The member is required to fill out a
                                     <a href="#"
-                                      >Sanlam Preservation Fund application
+                                      >Katshi Preservation Fund application
                                       form</a
                                     >.
                                   </p>
@@ -469,7 +469,7 @@
                                     mdi-information
                                   </v-icon>
                                   <p class="mb-0">
-                                    Sanlam will contact the member or broker for
+                                    Katshi will contact the member or broker for
                                     the application forms of the receiving fund.
                                   </p>
                                 </div>
@@ -490,7 +490,7 @@
                       </v-card-title>
                       <v-radio-group column class="mt-0">
                         <div
-                          v-if="viewPayPortionSanlamPlusProvidentFund"
+                          v-if="viewPayPortionKatshiPlusProvidentFund"
                           v-show="isFocusInner"
                           :class="{
                             focus: isFocusInner,
@@ -498,9 +498,9 @@
                           class="radio-item d-flex justify-space-between align-center pa-2"
                         >
                           <v-radio
-                            label="Sanlam Plus Preservation Fund"
-                            value="Sanlam Plus Preservation Fund"
-                            @click="showPayPortionSanlamPlusProvidentFund"
+                            label="Katshi Plus Preservation Fund"
+                            value="Katshi Plus Preservation Fund"
+                            @click="showPayPortionKatshiPlusProvidentFund"
                           ></v-radio>
                           <v-btn
                             text
@@ -543,9 +543,9 @@
                           </v-btn>
                         </div>
                       </v-radio-group>
-                      <!-- Sanlam Plus Preservation Fund -->
+                      <!-- Katshi Plus Preservation Fund -->
                       <div
-                        v-show="showPayPortionSanlamPlusProvidentFundText"
+                        v-show="showPayPortionKatshiPlusProvidentFundText"
                         class="pa-2"
                       >
                         <div grey class="text-bg-info py-6 px-7 mb-3">
@@ -556,10 +556,10 @@
                             <div>
                               <p class="mb-0">
                                 Members who elect to have their benefit
-                                transferred to the Sanlam Plus Preservation
+                                transferred to the Katshi Plus Preservation
                                 Fund, will have their investments transferred
                                 seamlessly provided that the member's investment
-                                portfolio(s) exist(s) on the Sanlam Plus
+                                portfolio(s) exist(s) on the Katshi Plus
                                 Preservation Fund. In these cases, it means that
                                 the funds will not be disinvested in cash, but
                                 transferred directly to the chosen portfolios.
@@ -579,7 +579,7 @@
                           >
                             <div
                               v-if="
-                                viewPayPortionBenefitSanlamPlusProvidentFund
+                                viewPayPortionBenefitKatshiPlusProvidentFund
                               "
                               v-show="isFocusLast"
                               :class="{
@@ -588,10 +588,10 @@
                               class="radio-item d-flex justify-space-between align-center pa-2"
                             >
                               <v-radio
-                                label="Indicate the percentage (%) or (R) Rand value to be paid in cash. The balance will be transferred to Sanlam Plus Preservation fund"
-                                value="Indicate the percentage (%) or (R) Rand value to be paid in cash. The balance will be transferred to Sanlam Plus Preservation fund"
+                                label="Indicate the percentage (%) or (R) Rand value to be paid in cash. The balance will be transferred to Katshi Plus Preservation fund"
+                                value="Indicate the percentage (%) or (R) Rand value to be paid in cash. The balance will be transferred to Katshi Plus Preservation fund"
                                 @click="
-                                  showPayPortionBenefitSanlamPlusProvidentFund
+                                  showPayPortionBenefitKatshiPlusProvidentFund
                                 "
                               ></v-radio>
                               <v-btn
@@ -607,7 +607,7 @@
                             </div>
 
                             <div
-                              v-if="viewTransferAmountSanlamPlusProvidentFund"
+                              v-if="viewTransferAmountKatshiPlusProvidentFund"
                               v-show="isFocusLast"
                               :class="{
                                 focus: isFocusLast,
@@ -615,10 +615,10 @@
                               class="radio-item d-flex justify-space-between align-center pa-2"
                             >
                               <v-radio
-                                label="Indicate the benefit portion to be transferred to Sanlam Plus Preservation fund. The balance will be paid in cash"
-                                value="Indicate the benefit portion to be transferred to Sanlam Plus Preservation fund. The balance will be paid in cash"
+                                label="Indicate the benefit portion to be transferred to Katshi Plus Preservation fund. The balance will be paid in cash"
+                                value="Indicate the benefit portion to be transferred to Katshi Plus Preservation fund. The balance will be paid in cash"
                                 @click="
-                                  showTransferAmountSanlamPlusProvidentFund
+                                  showTransferAmountKatshiPlusProvidentFund
                                 "
                               ></v-radio>
                               <v-btn
@@ -637,7 +637,7 @@
                           <!-- I want to pay a portion of the benefit in cash -->
                           <div
                             v-show="
-                              showPayPortionBenefitSanlamPlusProvidentFundText
+                              showPayPortionBenefitKatshiPlusProvidentFundText
                             "
                             class="pa-2"
                           >
@@ -645,10 +645,10 @@
                             <PortionBenefitCash />
                           </div>
 
-                          <!-- I want to transfer an amount to the Sanlam Plus Preservation Fund -->
+                          <!-- I want to transfer an amount to the Katshi Plus Preservation Fund -->
                           <div
                             v-show="
-                              showTransferAmountSanlamPlusProvidentFundText
+                              showTransferAmountKatshiPlusProvidentFundText
                             "
                             class="pa-2"
                           >
@@ -847,7 +847,7 @@
                             <PortionBenefitCash />
                           </div>
 
-                          <!-- I want to transfer an amount to the Sanlam Plus Preservation Fund -->
+                          <!-- I want to transfer an amount to the Katshi Plus Preservation Fund -->
                           <div
                             v-show="
                               showRetirementTransferAmountProvidentFundText
@@ -970,7 +970,7 @@
                                         mdi-information
                                       </v-icon>
                                       <p class="mb-0">
-                                        Sanlam will contact the member or broker
+                                        Katshi will contact the member or broker
                                         for the application forms of the
                                         receiving fund.
                                       </p>
@@ -1031,18 +1031,18 @@ export default {
       isFocusLast: false,
       isActiveLast: false,
 
-      viewSanlamPlusProvidentFund: true,
+      viewKatshiPlusProvidentFund: true,
       viewRetirementAnnuityFundProvidentFund: true,
 
-      viewPayPortionSanlamPlusProvidentFund: true,
+      viewPayPortionKatshiPlusProvidentFund: true,
       viewPayPortionRetirementAnnuityFundProvidentFund: true,
-      showPayPortionSanlamPlusProvidentFundText: false,
+      showPayPortionKatshiPlusProvidentFundText: false,
       showRetirementTransferAmountProvidentFundText: false,
 
-      showPayPortionBenefitSanlamPlusProvidentFundText: false,
-      viewPayPortionBenefitSanlamPlusProvidentFund: true,
-      viewTransferAmountSanlamPlusProvidentFund: true,
-      showTransferAmountSanlamPlusProvidentFundText: false,
+      showPayPortionBenefitKatshiPlusProvidentFundText: false,
+      viewPayPortionBenefitKatshiPlusProvidentFund: true,
+      viewTransferAmountKatshiPlusProvidentFund: true,
+      showTransferAmountKatshiPlusProvidentFundText: false,
 
       viewRetirementPayPortionBenefitProvidentFund: true,
       viewRetirementPayTransferAmountProvidentFund: true,
@@ -1068,7 +1068,7 @@ export default {
       showSamePaymentProvidentFundText: false,
       showBenefitProvidentFundText: false,
       showFullBenefitProvidentFundText: false,
-      showSanlamPlusProvidentFundText: false,
+      showKatshiPlusProvidentFundText: false,
       showRetirementAnnuityFundProvidentFundText: false,
       showPayPortionBenefitProvidentFundText: false,
       showTransferAmountProvidentFundText: false,
@@ -1240,14 +1240,14 @@ export default {
     toggleChangeInnerOption(e) {
       this.isActiveInner = false;
       this.isFocusInner = false;
-      this.viewSanlamPlusProvidentFund = true;
+      this.viewKatshiPlusProvidentFund = true;
       this.viewRetirementAnnuityFundProvidentFund = true;
-      this.showSanlamPlusProvidentFundText = false;
+      this.showKatshiPlusProvidentFundText = false;
       this.showRetirementAnnuityFundProvidentFundText = false;
 
-      this.viewPayPortionSanlamPlusProvidentFund = true;
+      this.viewPayPortionKatshiPlusProvidentFund = true;
       this.viewPayPortionRetirementAnnuityFundProvidentFund = true;
-      this.showPayPortionSanlamPlusProvidentFundText = false;
+      this.showPayPortionKatshiPlusProvidentFundText = false;
       this.showPayPortionRetirementAnnuityFundProvidentFundText = false;
 
       console.log(
@@ -1265,11 +1265,11 @@ export default {
       this.isActiveLast = false;
       this.isFocusLast = false;
 
-      this.showPayPortionBenefitSanlamPlusProvidentFundText = false;
-      this.viewPayPortionBenefitSanlamPlusProvidentFund = true;
+      this.showPayPortionBenefitKatshiPlusProvidentFundText = false;
+      this.viewPayPortionBenefitKatshiPlusProvidentFund = true;
 
-      this.showTransferAmountSanlamPlusProvidentFundText = false;
-      this.viewTransferAmountSanlamPlusProvidentFund = true;
+      this.showTransferAmountKatshiPlusProvidentFundText = false;
+      this.viewTransferAmountKatshiPlusProvidentFund = true;
 
       this.viewRetirementPayTransferAmountProvidentFund = true;
       this.showRetirementTransferAmountProvidentFundText = false;
@@ -1288,35 +1288,35 @@ export default {
       });
     },
 
-    showSanlamPlusProvidentFund() {
+    showKatshiPlusProvidentFund() {
       this.isActiveInner = true;
       this.isFocusInner = true;
 
-      this.showSanlamPlusProvidentFundText = true;
+      this.showKatshiPlusProvidentFundText = true;
       this.showRetirementAnnuityFundProvidentFundText = false;
 
-      this.viewSanlamPlusProvidentFund = true;
+      this.viewKatshiPlusProvidentFund = true;
       this.viewRetirementAnnuityFundProvidentFund = false;
     },
     showRetirementAnnuityFundProvidentFund() {
       this.isActiveInner = true;
       this.isFocusInner = true;
 
-      this.showSanlamPlusProvidentFundText = false;
+      this.showKatshiPlusProvidentFundText = false;
       this.showRetirementAnnuityFundProvidentFundText = true;
 
-      this.viewSanlamPlusProvidentFund = false;
+      this.viewKatshiPlusProvidentFund = false;
       this.viewRetirementAnnuityFundProvidentFund = true;
     },
 
-    showPayPortionSanlamPlusProvidentFund() {
+    showPayPortionKatshiPlusProvidentFund() {
       this.isActiveInner = true;
       this.isFocusInner = true;
 
-      this.showPayPortionSanlamPlusProvidentFundText = true;
+      this.showPayPortionKatshiPlusProvidentFundText = true;
       this.showPayPortionRetirementAnnuityFundProvidentFundText = false;
 
-      this.viewPayPortionSanlamPlusProvidentFund = true;
+      this.viewPayPortionKatshiPlusProvidentFund = true;
       this.viewPayPortionRetirementAnnuityFundProvidentFund = false;
     },
 
@@ -1324,32 +1324,32 @@ export default {
       this.isActiveInner = true;
       this.isFocusInner = true;
 
-      this.showPayPortionSanlamPlusProvidentFundText = false;
+      this.showPayPortionKatshiPlusProvidentFundText = false;
       this.showPayPortionRetirementAnnuityFundProvidentFundText = true;
 
-      this.viewPayPortionSanlamPlusProvidentFund = false;
+      this.viewPayPortionKatshiPlusProvidentFund = false;
       this.viewPayPortionRetirementAnnuityFundProvidentFund = true;
     },
 
-    showPayPortionBenefitSanlamPlusProvidentFund() {
+    showPayPortionBenefitKatshiPlusProvidentFund() {
       this.isActiveLast = true;
       this.isFocusLast = true;
 
-      this.showPayPortionBenefitSanlamPlusProvidentFundText = true;
-      this.viewPayPortionBenefitSanlamPlusProvidentFund = true;
+      this.showPayPortionBenefitKatshiPlusProvidentFundText = true;
+      this.viewPayPortionBenefitKatshiPlusProvidentFund = true;
 
-      this.showTransferAmountSanlamPlusProvidentFundText = false;
-      this.viewTransferAmountSanlamPlusProvidentFund = false;
+      this.showTransferAmountKatshiPlusProvidentFundText = false;
+      this.viewTransferAmountKatshiPlusProvidentFund = false;
     },
-    showTransferAmountSanlamPlusProvidentFund() {
+    showTransferAmountKatshiPlusProvidentFund() {
       this.isActiveLast = true;
       this.isFocusLast = true;
 
-      this.showPayPortionBenefitSanlamPlusProvidentFundText = false;
-      this.viewPayPortionBenefitSanlamPlusProvidentFund = false;
+      this.showPayPortionBenefitKatshiPlusProvidentFundText = false;
+      this.viewPayPortionBenefitKatshiPlusProvidentFund = false;
 
-      this.showTransferAmountSanlamPlusProvidentFundText = true;
-      this.viewTransferAmountSanlamPlusProvidentFund = true;
+      this.showTransferAmountKatshiPlusProvidentFundText = true;
+      this.viewTransferAmountKatshiPlusProvidentFund = true;
     },
 
     showRetirementPayPortionBenefitProvidentFund() {

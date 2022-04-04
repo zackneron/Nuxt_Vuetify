@@ -66,8 +66,8 @@ export default {
   data() {
     return {
       header: "Claims",
-      boldText: "Simba Chips Company (Pty) Ltd",
-      plainText: "Sanlam Umbrella Pension Fund",
+      boldText: "Arc En Ciel Company (Pty) Ltd",
+      plainText: "Katshi Design Pension Fund",
       breadItems: [
         {
           text: "Home",

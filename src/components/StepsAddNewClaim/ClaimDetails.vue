@@ -151,7 +151,7 @@
                         mdi-information
                       </v-icon>
                       <p class="mb-0">
-                        Please furnish Sanlam with proof of any amount by the
+                        Please furnish Katshi with proof of any amount by the
                         member in accordance with the Income Tax Act. <br />
                         The Fund will contravene the Pension Funds Act if it
                         allows a deduction from a benefit where such a deduction

@@ -20,7 +20,7 @@
                     <v-icon> mdi-phone </v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <v-list-item-title>086 072 8767</v-list-item-title>
+                    <v-list-item-title>000 000 0000</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
@@ -30,7 +30,7 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <v-list-item-title
-                      >SCdigitalsupport@sanlam.co.za</v-list-item-title
+                      >support@xxxx.com</v-list-item-title
                     >
                   </v-list-item-content>
                 </v-list-item>
@@ -62,9 +62,9 @@
                     <v-icon> mdi-map-marker </v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <v-list-item-title>2 Strand Road</v-list-item-title>
+                    <v-list-item-title>2 XXX Road</v-list-item-title>
                     <v-list-item-title
-                      >Bellville, South Africa</v-list-item-title
+                      >XXXXXX, XXXX XXXX</v-list-item-title
                     >
                   </v-list-item-content>
                 </v-list-item>
@@ -74,8 +74,8 @@
                     <v-icon> mdi-email </v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <v-list-item-title>PO Box 1</v-list-item-title>
-                    <v-list-item-title>Sanlamhof, 7532 </v-list-item-title>
+                    <v-list-item-title>XXXX 1</v-list-item-title>
+                    <v-list-item-title>XXXXX, 0000 </v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
               </v-list-group>
@@ -84,7 +84,7 @@
                 <template v-slot:activator>
                   <v-list-item-content>
                     <v-list-item-title class="text-h6 font-weight-light"
-                      >Midrand Office</v-list-item-title
+                      >Venus Office</v-list-item-title
                     >
                   </v-list-item-content>
                 </template>
@@ -95,12 +95,12 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <v-list-item-title
-                      >Westland Office Park, Block D,
+                      >XXXXX Office Park, Block X,
                     </v-list-item-title>
                     <v-list-item-title
-                      >254 Hall Street, Centurion,</v-list-item-title
+                      >0000 XXXX Street, Venus,</v-list-item-title
                     >
-                    <v-list-item-title>Pretoria, 0045</v-list-item-title>
+                    <v-list-item-title>Nepturn, 0000</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
@@ -110,9 +110,9 @@
                   </v-list-item-icon>
                   <v-list-item-content>
                     <v-list-item-title
-                      >Private Bag X14, Highveld Park,
+                      >Private Bag 000, XXXX Park,
                     </v-list-item-title>
-                    <v-list-item-title>0169, South Africa</v-list-item-title>
+                    <v-list-item-title>0000, XXX XXXX</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
               </v-list-group>
@@ -202,7 +202,7 @@
               >Submit</v-btn
             >
             <span class="text-caption" style="line-height: 14px"
-              >By clicking on “Submit”, you acknowledge having read our
+              >By clicking on “Submit”, Lorem ipsum dolor, sit, amet consectetur
               <a href="">privacy policy</a> .</span
             >
           </v-card>

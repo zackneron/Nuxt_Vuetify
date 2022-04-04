@@ -163,8 +163,7 @@
           >Retirement and Death claims
         </v-card-title>
         <v-card-text class="pa-0 pb-4">
-          The processing of Retirement and Death claims is not yet available on
-          this application.You will now be redirected to the
+          Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Autem, commodi.
           <strong class="black--text">Retirement Fund Web</strong> to process
           the Retirement/Death claim.
         </v-card-text>
@@ -203,9 +202,9 @@ export default {
   },
   data() {
     return {
-      company: "Simba Chips Company (Pty) Ltd (26872634)",
-      pensionFund: "Sanlam Umbrella Pension Fund",
-      providentFund: "Sanlam Umbrella Provident Fund",
+      company: "Katshi Way Company (Pty) Ltd",
+      pensionFund: "Katshi Design Pension Fund",
+      providentFund: "Katshi Design Provident Fund",
       createClaimsDialog: false,
       processClaim: false,
       breadItems: [
@@ -279,8 +278,8 @@ export default {
       tab: null,
       tabItems: ["All", "Withdrawal", "Retirement", "Death"],
       employerClaim: [
-        "Simba Animal Farm (7253623)",
-        "Simba Chips Company (Pty) Ltd (7…",
+        "Katshi Animal Farm",
+        "Katshi Chips Company (Pty) Ltd (7…",
       ],
       claimtype: ["Withdrawal Claims", "Retirement Claims", "Death Claims"],
       rules: {

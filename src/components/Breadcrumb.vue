@@ -19,8 +19,8 @@ export default {
   props: ["header", "boldText", "plainText"],
   data() {
     return {
-      heroParaBoldText: "Simba Chips Company (Pty) Ltd",
-      heroPlainText: "- Sanlam Umbrella Pension Fund",
+      heroParaBoldText: "Katshi Company (Pty) Ltd",
+      heroPlainText: "- lorem text",
     };
   },
   computed: {},

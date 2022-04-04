@@ -27,7 +27,7 @@
                 </p>
                 <p>
                   Note that should you not have written consent from the member,
-                  Sanlam will contact the member to obtain written consent,
+                  Katshi will contact the member to obtain written consent,
                   using the contact details provided above.
                 </p>
                 <p>

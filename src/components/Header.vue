@@ -2,11 +2,7 @@
   <div>
     <v-app-bar :clipped-left="clipped" color="white">
       <nuxt-link to="/">
-        <v-img
-          :src="require('~/assets/sanlam-brand-large.png')"
-          max-height="24"
-          max-width="114"
-        />
+        Katshi Logo
       </nuxt-link>
       <a :href="homeUrl" class="text-decoration-none black--text ml-12"
         >Claims</a

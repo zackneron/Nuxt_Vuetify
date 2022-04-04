@@ -10,8 +10,7 @@
               >
                 <span class="text-h2 hero__title">We are here to help</span>
                 <span class="text-subtitle-1 hero__description"
-                  >Please fill out your details below so we can assist you with
-                  your general financial concerns.</span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, sequi?</span
                 >
               </div>
             </v-col>
