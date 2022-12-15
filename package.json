@@ -1,40 +1,66 @@
 {
-  "name": "claimswithdrawal",
-  "version": "1.0.0",
-  "private": true,
-  "engines": {
-    "node": ">=14.19.0",
-    "npm": ">=8.5.2"
-  },
-  "scripts": {
-    "preinstall": "node checknode",
-    "prestart": "node checknode",
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/composition-api": "^0.31.0",
-    "@vue/composition-api": "^1.4.5",
-    "@vuelidate/core": "^2.0.0-alpha.34",
-    "@vuelidate/validators": "^2.0.0-alpha.26",
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.8",
-    "pinia": "^0.5.4",
-    "save": "^2.4.0",
-    "vue": "^2.6.14",
-    "vue-tel-input-vuetify": "^1.5.0",
-    "vuelidate": "^0.7.7"
-  },
-  "devDependencies": {
-    "@nuxtjs/style-resources": "^1.2.1",
-    "@nuxtjs/vuetify": "^1.12.1",
-    "prettier": "2.5.1",
-    "vue-server-renderer": "^2.6.14"
-  },
-  "optionalDependencies": {
-    "fsevents": ">=1.2.7"
-  }
+    "name": "claimswithdrawal",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": ">=14.19.0",
+        "npm": ">=8.5.2"
+    },
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate && xcopy .\\dist ..\\wwwroot /E /H /C /I /Y",
+        "pre-commit": "lint-staged",
+        "prepare": "cd ../../../ && husky install src/Sanlam.Claims.Withdrawals.UI/FrontEnd/.husky"
+    },
+    "lint-staged": {
+        "*.{js,vue,ts}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    },
+    "dependencies": {
+        "@lukemorales/query-key-factory": "^1.0.0",
+        "@nuxtjs/axios": "^5.13.6",
+        "@nuxtjs/composition-api": "^0.32.0",
+        "@sanlam/sc-components": "^1.0.6",
+        "@tanstack/vue-query": "^4.14.1",
+        "@vue/composition-api": "^1.6.3",
+        "@vuelidate/core": "^2.0.0-alpha.42",
+        "@vuelidate/validators": "^2.0.0-alpha.30",
+        "axios": "^0.27.2",
+        "chart.js": "^3.9.1",
+        "core-js": "^3.15.1",
+        "nuxt": "^2.15.8",
+        "pinia": "^0.5.4",
+        "save": "^2.4.0",
+        "vue": "^2.6.14",
+        "vue-tel-input-vuetify": "^1.5.0",
+        "vuelidate": "^0.7.7"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.14.7",
+        "@nuxt/types": "^2.15.8",
+        "@nuxt/typescript-build": "^2.1.0",
+        "@nuxtjs/eslint-config": "^8.0.0",
+        "@nuxtjs/style-resources": "^1.2.1",
+        "@nuxtjs/vuetify": "^1.12.1",
+        "eslint": "^8.4.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-nuxt": "^3.1.0",
+        "eslint-plugin-vue": "^8.2.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.5.1",
+        "pure-vue-chart": "^0.4.0",
+        "vue-server-renderer": "^2.6.14"
+    },
+    "optionalDependencies": {
+        "fsevents": ">=1.2.7"
+    },
+    "volta": {
+        "node": "16.15.1",
+        "npm": "8.13.2"
+    }
 }

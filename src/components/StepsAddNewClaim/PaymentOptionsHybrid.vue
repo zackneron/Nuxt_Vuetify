@@ -1,54 +1,53 @@
 <template>
-  <div>
-    <SanlamUmbrellaPension />
-    <SanlamUmbrellaProvident />
-  </div>
+    <div>
+        <SanlamUmbrellaPension />
+        <SanlamUmbrellaProvident />
+    </div>
 </template>
 
 <script>
-import DividerBar from "@/components/DividerBar";
-import SanlamUmbrellaPension from "@/components/StepsAddNewClaim/SanlamUmbrellaFund/SanlamUmbrellaPension";
-import SanlamUmbrellaProvident from "@/components/StepsAddNewClaim/SanlamUmbrellaFund/SanlamUmbrellaProvident";
+import SanlamUmbrellaPension from '@/components/StepsAddNewClaim/SanlamUmbrellaFund/SanlamUmbrellaPension'
+import SanlamUmbrellaProvident from '@/components/StepsAddNewClaim/SanlamUmbrellaFund/SanlamUmbrellaProvident'
+
 export default {
-  components: {
-    DividerBar,
-    SanlamUmbrellaPension,
-    SanlamUmbrellaProvident,
-  },
-  data() {
-    return {};
-  },
-  methods: {},
-};
+    components: {
+        SanlamUmbrellaPension,
+        SanlamUmbrellaProvident,
+    },
+    data() {
+        return {}
+    },
+    methods: {},
+}
 </script>
 
 <style lang="scss">
 .v-radio {
-  &.theme--light {
-    margin-bottom: 0 !important;
-  }
+    &.theme--light {
+        margin-bottom: 0 !important;
+    }
 }
 
 .radio-item {
-  border-radius: 4px;
-  transition: all 0.5s linear;
-  &.focus {
-    background: #f3f5f7;
-  }
-  &:hover {
-    background: #f3f5f7;
-  }
+    border-radius: 4px;
+    transition: all 0.5s linear;
+    &.focus {
+        background: #f3f5f7;
+    }
+    &:hover {
+        background: #f3f5f7;
+    }
 }
 
 .active {
-  display: block;
+    display: block;
 }
 
 .focus {
-  background: #f3f5f7;
+    background: #f3f5f7;
 }
 
 .display-options {
-  display: none;
+    display: none;
 }
 </style>

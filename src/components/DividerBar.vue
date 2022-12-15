@@ -1,14 +1,14 @@
 <template>
-  <div class="grey lighten-2 divider-bar"></div>
+    <div class="grey lighten-2 divider-bar"></div>
 </template>
 
 <script>
 export default {
-  name: "DividerBar",
-};
+    name: 'DividerBar',
+}
 </script>
 <style lang="scss">
 .divider-bar {
-  height: 5px;
+    height: 5px;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <v-app light>
-    <Header />
-    <ContactBanner />
-    <v-main class="">
-      <Nuxt />
-    </v-main>
-    <Footer />
-  </v-app>
+    <v-app light>
+        <Header />
+        <ContactBanner />
+        <v-main class="">
+            <Nuxt />
+        </v-main>
+        <Footer />
+    </v-app>
 </template>
 
 <script>
@@ -17,14 +17,10 @@ import Footer from '@/components/Footer'
 export default {
     name: 'App',
     components: { Header, ContactBanner, Footer },
-    data(){
-        return {
-
-        }
-    }
+    data() {
+        return {}
+    },
 }
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

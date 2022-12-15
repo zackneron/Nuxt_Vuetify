@@ -1,14 +1,14 @@
 <template>
-  <v-app light>
-    <Header />
-    <Banner />
-    <v-main class="v-main--container mb-16">
-      <v-container fluid class="container--custom-size">
-        <Nuxt />
-      </v-container>
-    </v-main>
-    <Footer />
-  </v-app>
+    <v-app light>
+        <Header />
+        <Banner />
+        <v-main class="v-main--container mb-16">
+            <v-container fluid class="container--custom-size">
+                <Nuxt />
+            </v-container>
+        </v-main>
+        <Footer />
+    </v-app>
 </template>
 
 <script>
@@ -19,26 +19,24 @@ import Footer from '@/components/Footer'
 export default {
     name: 'App',
     components: { Header, Banner, Footer },
-    data(){
-        return {
-
-        }
-    }
+    data() {
+        return {}
+    },
 }
 </script>
 
 <style scoped lang="scss">
 .v-main--container {
-  margin-top: -495px;
+    margin-top: -495px;
 
-  .theme--light.v-application {
-    background: transparent;
-  }
-
-  .container--custom-size {
-    @include sm {
-      max-width: 90%;
+    .theme--light.v-application {
+        background: transparent;
     }
-  }
+
+    .container--custom-size {
+        @include sm {
+            max-width: 90%;
+        }
+    }
 }
 </style>

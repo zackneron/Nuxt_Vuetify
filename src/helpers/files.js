@@ -1,6 +1,4 @@
-export const ALLOWED_FILE_TYPES = [
-    '.pdf',
-]
+export const ALLOWED_FILE_TYPES = ['.pdf']
 
 export function formatBytes(bytes, decimals) {
     if (bytes === 0) {
