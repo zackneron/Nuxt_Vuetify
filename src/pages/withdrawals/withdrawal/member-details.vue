@@ -93,7 +93,6 @@
                                 <sc-income-tax-reference-number-input
                                     v-model="memberDetails.taxNumber"
                                     :disabled="doesQualifyForEarlyRetirement"
-                                    :class="{ 'error--text': v$.taxReference.$error }"
                                 ></sc-income-tax-reference-number-input>
                             </v-col>
                         </v-row>
@@ -448,7 +447,7 @@
 <script>
 import { mapActions, mapState } from 'pinia'
 import useVuelidate from '@vuelidate/core'
-import { required, minLength, maxLength, numeric, email, helpers, requiredIf } from '@vuelidate/validators'
+import { required, numeric, email, helpers, requiredIf } from '@vuelidate/validators'
 import VueTelInputVuetify from 'vue-tel-input-vuetify/lib/vue-tel-input-vuetify.vue'
 import DividerBar from '@/components/DividerBar'
 
@@ -605,12 +604,7 @@ export default {
             countries: null,
         }
     },
-    async fetch() {
-        /*
-        await this.loadContactDetails(this.membershipNumber)
-        await this.validateIdNumber(this.idNumber)
-        */
-    },
+    async fetch() {},
     computed: {
         doesQualifyForEarlyRetirement() {
             return this.age >= 55 && !this.overrideAgeLimit
@@ -678,12 +672,6 @@ export default {
             memberPersonalEmail: {
                 required: requiredIf(this.memberMobileNumber === '' || this.memberMobileNumber === null),
                 email: helpers.withMessage('Please provide a valid email address.', email),
-            },
-            taxReference: {
-                required: helpers.withMessage('Please enter an Income tax reference number.', required),
-                minLength: minLength(10),
-                maxLength: maxLength(10),
-                numeric,
             },
             selectedItems: {
                 required,

@@ -37,60 +37,218 @@
                         </div>
                     </v-col>
                 </v-row>
-                <v-row>
-                    <v-col cols="12" md="8" offset-md="2">
-                        <div v-if="showAllGraphs" class="mt-7 mb-7">
-                            <h3>All graphs display here</h3>
-                            <canvas id="myChart" width="400" height="200"></canvas>
-                        </div>
-                        <div v-if="showWithdrawalGraph" class="mt-7 mb-7">
-                            <h3>Withdrawal graph here</h3>
-                            <canvas id="myChart" width="400" height="200"></canvas>
-                        </div>
-                        <div v-if="showRetirementGrapgh" class="mt-7 mb-7">
-                            <h3>Retirement graph here</h3>
-                            <canvas id="myChart" width="400" height="200"></canvas>
-                        </div>
-                        <div v-if="showDeathGraph" class="mt-7 mb-7">
-                            <h3>Death graph here</h3>
-                            <canvas id="myChart" width="400" height="200"></canvas>
-                        </div>
-                    </v-col>
-                </v-row>
             </v-container>
-        </div>
-
-        <div class="white black--text elevation-2 pa-7 rounded">
             <div v-if="reloadWithdrawals">
-                <v-container>
-                    <v-row class="filter-section">
-                        <v-col cols="12" sm="4">
-                            <v-text-field v-model="search" label="Search" outlined clearable></v-text-field>
-                        </v-col>
-                        <v-col cols="12" sm="4">
-                            <v-select v-model="search" outlined :items="items" label="Claim Status"></v-select>
-                        </v-col>
-                        <v-col cols="12" sm="4">
-                            <v-btn x-large color="primary"> Search </v-btn>
-                        </v-col>
-                    </v-row>
-                    <DividerBar />
-                    <v-row class="mt-4 mb-8">
-                        <v-col cols="12">
-                            <TableContentHeader
-                                :company="company"
-                                :pension-fund="pensionFund"
-                                :provident-fund="providentFund"
-                            />
-                        </v-col>
-                        <v-col cols="12">
-                            <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
-                            </v-data-table>
-                        </v-col>
-                    </v-row>
-                </v-container>
+                <!-- ALL GRAPHS CONTENT DISPLAY HERE-->
+                <div v-if="showAllGraphs">
+                    <v-container>
+                        <v-row>
+                            <v-col cols="12" md="8" offset-md="2">
+                                <div class="mt-7 mb-7">
+                                    <h3>Temporary title to be removed - All graphs display here</h3>
+                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                </div>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                    <v-container>
+                        <v-row class="filter-section">
+                            <v-col cols="12" sm="4">
+                                <v-text-field v-model="search" label="Search" outlined clearable></v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-select v-model="search" outlined :items="items" label="Claim Status"></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-btn x-large color="primary"> Search </v-btn>
+                            </v-col>
+                        </v-row>
+                        <DividerBar />
+                        <v-row class="mt-4 mb-8">
+                            <v-col cols="12">
+                                <h2>Temporary title to be removed - Withdrawal Table</h2>
+                            </v-col>
+                            <v-col cols="12">
+                                <TableContentHeader
+                                    :company="company"
+                                    :pension-fund="pensionFund"
+                                    :provident-fund="providentFund"
+                                />
+                            </v-col>
+                            <v-col cols="12">
+                                <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
+                                </v-data-table>
+                            </v-col>
+                        </v-row>
+                        <v-row class="mt-4 mb-8">
+                            <v-col cols="12">
+                                <h2>Temporary title to be removed - Retirement Table</h2>
+                            </v-col>
+                            <v-col cols="12">
+                                <TableContentHeader
+                                    :company="company"
+                                    :pension-fund="pensionFund"
+                                    :provident-fund="providentFund"
+                                />
+                            </v-col>
+                            <v-col cols="12">
+                                <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
+                                </v-data-table>
+                            </v-col>
+                        </v-row>
+                        <v-row class="mt-4 mb-8">
+                            <v-col cols="12">
+                                <h2>Temporary title to be removed - Death Table</h2>
+                            </v-col>
+                            <v-col cols="12">
+                                <TableContentHeader
+                                    :company="company"
+                                    :pension-fund="pensionFund"
+                                    :provident-fund="providentFund"
+                                />
+                            </v-col>
+                            <v-col cols="12">
+                                <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
+                                </v-data-table>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </div>
+
+                <!-- WITHDRAWAL GRAPH CONTENT DISPLAY HERE-->
+                <div v-if="showWithdrawalGraph">
+                    <v-container>
+                        <v-row>
+                            <v-col cols="12" md="8" offset-md="2">
+                                <div class="mt-7 mb-7">
+                                    <h3>Temporary title to be removed - Withdrawal graph displays here</h3>
+                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                </div>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                    <v-container>
+                        <v-row class="filter-section">
+                            <v-col cols="12" sm="4">
+                                <v-text-field v-model="search" label="Search" outlined clearable></v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-select v-model="search" outlined :items="items" label="Claim Status"></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-btn x-large color="primary"> Search </v-btn>
+                            </v-col>
+                        </v-row>
+                        <DividerBar />
+                        <v-row class="mt-4 mb-8">
+                            <v-col cols="12">
+                                <h2>Temporary title to be removed - Withdrawal Table</h2>
+                            </v-col>
+                            <v-col cols="12">
+                                <TableContentHeader
+                                    :company="company"
+                                    :pension-fund="pensionFund"
+                                    :provident-fund="providentFund"
+                                />
+                            </v-col>
+                            <v-col cols="12">
+                                <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
+                                </v-data-table>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </div>
+
+                <!-- RETIREMENT GRAPH CONTENT DISPLAY HERE-->
+                <div v-if="showRetirementGrapgh">
+                    <v-container>
+                        <v-row>
+                            <v-col cols="12" md="8" offset-md="2">
+                                <div class="mt-7 mb-7">
+                                    <h3>Temporary title to be removed - Retirement graph displays here</h3>
+                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                </div>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                    <v-container>
+                        <v-row class="filter-section">
+                            <v-col cols="12" sm="4">
+                                <v-text-field v-model="search" label="Search" outlined clearable></v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-select v-model="search" outlined :items="items" label="Claim Status"></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-btn x-large color="primary"> Search </v-btn>
+                            </v-col>
+                        </v-row>
+                        <DividerBar />
+                        <v-row class="mt-4 mb-8">
+                            <v-col cols="12">
+                                <h2>Temporary title to be removed - Retirement Table</h2>
+                            </v-col>
+                            <v-col cols="12">
+                                <TableContentHeader
+                                    :company="company"
+                                    :pension-fund="pensionFund"
+                                    :provident-fund="providentFund"
+                                />
+                            </v-col>
+                            <v-col cols="12">
+                                <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
+                                </v-data-table>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </div>
+
+                <!-- DEATH GRAPH CONTENT DISPLAY HERE-->
+                <div v-if="showDeathGraph">
+                    <v-container>
+                        <v-row>
+                            <v-col cols="12" md="8" offset-md="2">
+                                <div class="mt-7 mb-7">
+                                    <h3>Temporary title to be removed - Death Table</h3>
+                                    <canvas id="myChart" width="400" height="200"></canvas>
+                                </div>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                    <v-container>
+                        <v-row class="filter-section">
+                            <v-col cols="12" sm="4">
+                                <v-text-field v-model="search" label="Search" outlined clearable></v-text-field>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-select v-model="search" outlined :items="items" label="Claim Status"></v-select>
+                            </v-col>
+                            <v-col cols="12" sm="4">
+                                <v-btn x-large color="primary"> Search </v-btn>
+                            </v-col>
+                        </v-row>
+                        <DividerBar />
+                        <v-row class="mt-4 mb-8">
+                            <v-col cols="12">
+                                <h2>Temporary title to be removed - Death Table</h2>
+                            </v-col>
+                            <v-col cols="12">
+                                <TableContentHeader
+                                    :company="company"
+                                    :pension-fund="pensionFund"
+                                    :provident-fund="providentFund"
+                                />
+                            </v-col>
+                            <v-col cols="12">
+                                <v-data-table :headers="headers" :items="contents" :search="search" class="elevation-2">
+                                </v-data-table>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </div>
             </div>
         </div>
+
         <v-tooltip left color="black">
             <template #activator="{ on, attrs }">
                 <v-btn
